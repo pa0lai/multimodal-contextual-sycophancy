@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated paper."
+title: "Do Multimodal LLMs See Before They Read? Diagnosing Contextual Sycophancy"
+type: software
+authors:
+  - family-names: Lai
+    given-names: Yi-Cheng
+  - family-names: Huang
+    given-names: Hen-Hsen
+year: 2026
+conference:
+  name: "Findings of the Association for Computational Linguistics: EMNLP 2026"
+

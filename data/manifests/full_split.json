@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "generator_source_split": "gemini_generated",
+  "evaluated_metadata_counts": {
+    "abnormal": 499,
+    "normal": 499,
+    "total": 998
+  },
+  "source_image_pool_counts": {
+    "abnormal_whoops": 499,
+    "normal_imagenet_train": 500,
+    "total": 999
+  },
+  "headline_population": {
+    "image_type": "abnormal",
+    "n": 499
+  },
+  "normal_case_500_status": "POST_PREPROCESSING_EXACT_RECOVERY_COMPLETE",
+  "imagenet_exact_set_matches": 500,
+  "imagenet_resolved_source_identities": 500
+}

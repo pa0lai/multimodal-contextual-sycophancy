@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "scanner_used": "git history-only path/object checks plus credential-pattern scan with field-level classification",
+  "gitleaks_available": false,
+  "tracked_env_history": {
+    "status": "pass",
+    "commits": [],
+    "objects": []
+  },
+  "release_candidate_secret_scan": {
+    "status": "pass",
+    "findings": [],
+    "last_rescan_date": "2026-08-24",
+    "checks": [
+      "credential-like filenames excluding .env.example",
+      "Hugging Face, OpenAI, AWS, OpenRouter, and HF_TOKEN assignment patterns",
+      "forbidden structured model-output fields via test suite"
+    ],
+    "token_handling": "Hugging Face credential was consumed through authorized local credential lookup; it was not printed, copied, persisted, or committed"
+  },
+  "historical_regex_matches": [
+    {
+      "commit": "0616dca9d3fde73263a6b65767820f0650155a7d",
+      "paths": [
+        "results/openai_gpt-5.1/baseline_rag/false_text.jsonl",
+        "results/openai_gpt-5.1/baseline_rag/irrelevant_text.jsonl",
+        "results/openai_gpt-5.1/baseline_rag/true_text.jsonl",
+        "results/openai_gpt-5.1/param_only.jsonl"
+      ],
+      "classified_type": "high-entropy provider reasoning_details data; not an authentication field",
+      "status": "non-secret false positive"
+    },
+    {
+      "commit": "d4db9fff76f88736055424fb04af53a3e49c2b9d",
+      "paths": [
+        "results/openai_gpt-5.1/baseline_rag/false_text.jsonl",
+        "results/openai_gpt-5.1/baseline_rag/irrelevant_text.jsonl",
+        "results/openai_gpt-5.1/baseline_rag/true_text.jsonl",
+        "results/openai_gpt-5.1/cot_rag/false_text.jsonl",
+        "results/openai_gpt-5.1/cot_rag/irrelevant_text.jsonl",
+        "results/openai_gpt-5.1/cot_rag/true_text.jsonl",
+        "results/openai_gpt-5.1/param_only.jsonl"
+      ],
+      "classified_type": "high-entropy provider reasoning_details data; not an authentication field",
+      "status": "non-secret false positive"
+    },
+    {
+      "commit": "125c888857884dbb19942fdfe4e6c41430591e04",
+      "paths": [
+        "results/openai_gpt-5.1/baseline_rag/false_text.jsonl",
+        "results/openai_gpt-5.1/baseline_rag/irrelevant_text.jsonl",
+        "results/openai_gpt-5.1/baseline_rag/true_text.jsonl",
+        "results/openai_gpt-5.1/cot_rag/false_text.jsonl",
+        "results/openai_gpt-5.1/cot_rag/irrelevant_text.jsonl",
+        "results/openai_gpt-5.1/cot_rag/true_text.jsonl",
+        "results/openai_gpt-5.1/param_only.jsonl"
+      ],
+      "classified_type": "diff removed previously classified high-entropy provider reasoning_details data",
+      "status": "non-secret false positive"
+    }
+  ],
+  "untracked_private_env": {
+    "path": ".env",
+    "key_name": "OPENROUTER_API_KEY",
+    "copied_or_printed": false,
+    "history_status": "never committed or present as a named Git object",
+    "release_blocker": false,
+    "recommendation": "precautionary rotation"
+  }
+}

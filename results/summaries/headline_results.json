@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "all_passed": true,
+  "results": [
+    {
+      "name": "full_abnormal_gpt51_joint_false_text",
+      "filters": {
+        "generator_source_split": "gemini_generated",
+        "image_type": "abnormal",
+        "model_id": "openai/gpt-5.1",
+        "experimental_phase": "baseline_rag",
+        "text_condition": "false_text",
+        "attack_condition": "none"
+      },
+      "expected_n": 499,
+      "observed_n": 499,
+      "expected_mean": 0.07915831663326653,
+      "observed_mean": 0.07915831663326653,
+      "displayed": "7.9%",
+      "passed": true
+    },
+    {
+      "name": "full_abnormal_gpt51_witness_only_false_text",
+      "filters": {
+        "generator_source_split": "gemini_generated",
+        "image_type": "abnormal",
+        "model_id": "openai/gpt-5.1",
+        "experimental_phase": "witness_only",
+        "text_condition": "false_text",
+        "attack_condition": "none"
+      },
+      "expected_n": 499,
+      "observed_n": 499,
+      "expected_mean": 0.8416833667334669,
+      "observed_mean": 0.8416833667334669,
+      "displayed": "84.2%",
+      "passed": true
+    },
+    {
+      "name": "gpt4o_abnormal_gpt51_joint_false_text",
+      "filters": {
+        "generator_source_split": "gpt4o_regenerated",
+        "image_type": "abnormal",
+        "model_id": "openai/gpt-5.1",
+        "experimental_phase": "baseline_rag",
+        "text_condition": "false_text",
+        "attack_condition": "none"
+      },
+      "expected_n": 100,
+      "observed_n": 100,
+      "expected_mean": 0.68,
+      "observed_mean": 0.68,
+      "displayed": "68.0%",
+      "passed": true
+    },
+    {
+      "name": "gpt4o_abnormal_gpt51_full_witness_arbiter_false_text",
+      "filters": {
+        "generator_source_split": "gpt4o_regenerated",
+        "image_type": "abnormal",
+        "model_id": "openai/gpt-5.1",
+        "experimental_phase": "s2va",
+        "text_condition": "false_text",
+        "attack_condition": "none"
+      },
+      "expected_n": 100,
+      "observed_n": 100,
+      "expected_mean": 0.85,
+      "observed_mean": 0.85,
+      "displayed": "85.0%",
+      "passed": true
+    }
+  ]
+}

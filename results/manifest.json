@@ -1,0 +1,3021 @@
+{
+  "schema_version": 1,
+  "compact_schema_fields": [
+    "schema_version",
+    "case_id",
+    "image_type",
+    "model_id",
+    "experimental_phase",
+    "text_condition",
+    "attack_condition",
+    "correctness_score",
+    "common_sense_score",
+    "text_faithfulness_score",
+    "visual_faithfulness_score",
+    "witness_confidence",
+    "generator_source_split",
+    "original_source"
+  ],
+  "sources": [
+    {
+      "original_relative_path": "results/anthropic_claude-sonnet-4.5/baseline_rag/compression_severe/false_text.jsonl",
+      "byte_size": 21143,
+      "sha256": "1c55d674bc23ce9767bc0fba9e23e04d62ee97e6790f426aeb9f311d92cd3785",
+      "row_count": 20,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 4,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/anthropic_claude-sonnet-4.5/baseline_rag/compression_severe/irrelevant_text.jsonl",
+      "byte_size": 19467,
+      "sha256": "4769cdd6780028bd6998eae11c23914702111322ce0f22aabea427e0c14b3910",
+      "row_count": 20,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 4,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/anthropic_claude-sonnet-4.5/baseline_rag/compression_severe/true_text.jsonl",
+      "byte_size": 19548,
+      "sha256": "04a936f39cb33675b2f3434486eac090769b7235c2d4f7b30ab15442d3d3ac71",
+      "row_count": 20,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 4,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/anthropic_claude-sonnet-4.5/baseline_rag/correct_context.jsonl",
+      "byte_size": 2266898,
+      "sha256": "3e083f94953c325343ce39c69b79ac42d6f011ef682c5ea228979a677e8386c2",
+      "row_count": 990,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 4,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/anthropic_claude-sonnet-4.5/baseline_rag/false_text.jsonl",
+      "byte_size": 2346959,
+      "sha256": "4848f3109b8f5da06cc1ce698c29a4596e923325d80d846fabc7a1e7f2408638",
+      "row_count": 990,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 4,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/anthropic_claude-sonnet-4.5/baseline_rag/irrelevant_text.jsonl",
+      "byte_size": 2084839,
+      "sha256": "99162e6c36bf01bbbf2d6f1e48951c5268c4a48ef72178b5bdb1036e3e62e05d",
+      "row_count": 990,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 4,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/anthropic_claude-sonnet-4.5/baseline_rag/low_light_severe/false_text.jsonl",
+      "byte_size": 19266,
+      "sha256": "2517978e8fb0f1cb2daf4754f793e2106d671a2d209fa8b4dbd33314b30c7e1a",
+      "row_count": 20,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 4,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/anthropic_claude-sonnet-4.5/baseline_rag/low_light_severe/irrelevant_text.jsonl",
+      "byte_size": 19376,
+      "sha256": "b9cdad94fe77a887dd18283ab465b4259bcc64299f84a7d82480a188a17609ad",
+      "row_count": 20,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 4,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/anthropic_claude-sonnet-4.5/baseline_rag/low_light_severe/true_text.jsonl",
+      "byte_size": 19261,
+      "sha256": "53bd4dbd807322b96e1ad17f1492dd253b2ad8bdddadfc0a5a42deb5c4567f7e",
+      "row_count": 20,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 4,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/anthropic_claude-sonnet-4.5/baseline_rag/no_context.jsonl",
+      "byte_size": 1653562,
+      "sha256": "a7001ee5c1568f20412bc4f73525604d0aae4e3cc8136838165ba4aaa3fdde61",
+      "row_count": 990,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 4,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/anthropic_claude-sonnet-4.5/baseline_rag/overexposure_severe/false_text.jsonl",
+      "byte_size": 20947,
+      "sha256": "a9047865e9e1be5ad1da91c4e873cb2bb8635a2472b8515686f28060fbe73217",
+      "row_count": 20,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 4,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/anthropic_claude-sonnet-4.5/baseline_rag/overexposure_severe/irrelevant_text.jsonl",
+      "byte_size": 17940,
+      "sha256": "f455654e3524dade0b3bde9fbc517430d9248d0c4e715711f5eebcccec2ee061",
+      "row_count": 20,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 4,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/anthropic_claude-sonnet-4.5/baseline_rag/overexposure_severe/true_text.jsonl",
+      "byte_size": 18400,
+      "sha256": "f6b61e052c1717b0fff1eb1f97c9f8fbc959220fb099976b6c556626cff55b60",
+      "row_count": 19,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 4,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/anthropic_claude-sonnet-4.5/baseline_rag/pixelation_severe/true_text.jsonl",
+      "byte_size": 18829,
+      "sha256": "523d7ffca89ffbd6a196a1d4c2e890e5f85cc37311fa9ec87fafa3db4dbaeb8d",
+      "row_count": 20,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 4,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/anthropic_claude-sonnet-4.5/baseline_rag/shuffled_context.jsonl",
+      "byte_size": 2301020,
+      "sha256": "d480b1568cfde3a104ee44d3064df580a6c1ec8eb5e5b38e40d7cd12cff3145b",
+      "row_count": 990,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 4,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/anthropic_claude-sonnet-4.5/baseline_rag/true_text.jsonl",
+      "byte_size": 2280569,
+      "sha256": "6517d0dafe7db30b143ac87790fa7a87946ff961d805602d4157f4c2a15b01a5",
+      "row_count": 990,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/anthropic_claude-sonnet-4.5/cot_rag/correct_context.jsonl",
+      "byte_size": 3039960,
+      "sha256": "633f7d2fa3db1ba4d5bae7acfbd460ca38fef35bfc15fefdff3f149173fe5e63",
+      "row_count": 990,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/anthropic_claude-sonnet-4.5/cot_rag/false_text.jsonl",
+      "byte_size": 3012134,
+      "sha256": "472c64077cbc6a104f0018ba319dba2ee7053403126027dbb15b2f6dd5cbf876",
+      "row_count": 990,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/anthropic_claude-sonnet-4.5/cot_rag/irrelevant_text.jsonl",
+      "byte_size": 2826377,
+      "sha256": "2fb14a8ed2d7b6a1255a39acaaa42f7807eb073cfaafe0df1e25cb1cc53a1397",
+      "row_count": 990,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/anthropic_claude-sonnet-4.5/cot_rag/no_context.jsonl",
+      "byte_size": 2356158,
+      "sha256": "ffac1389a9e4d4a3a78e8bcead2a1c9c1eb817ec4beb57b6b8977660ccfcdd42",
+      "row_count": 990,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/anthropic_claude-sonnet-4.5/cot_rag/shuffled_context.jsonl",
+      "byte_size": 2902004,
+      "sha256": "7181b52d016e149857f3ba3cc2764b0566db83576f01c6656232067d3cf17ffe",
+      "row_count": 990,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/anthropic_claude-sonnet-4.5/cot_rag/true_text.jsonl",
+      "byte_size": 3037497,
+      "sha256": "6ee9c088ba1b7d9d3793100c43913c2ccb0aff4003509b6c63ef4aacd38a7f29",
+      "row_count": 990,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/anthropic_claude-sonnet-4.5/dose_response/none/medium_text.jsonl",
+      "byte_size": 1943381,
+      "sha256": "029e589dbdb4a0989b354b3b4a2c71b49e31065a8ead85921cd17a3193bd3756",
+      "row_count": 990,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 4,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/anthropic_claude-sonnet-4.5/dose_response/none/strong_text.jsonl",
+      "byte_size": 2341061,
+      "sha256": "58b7a7ee448e79d04ac64b70824a9a2cfd31784efaf4109f1571c5ac05108209",
+      "row_count": 990,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 4,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/anthropic_claude-sonnet-4.5/dose_response/none/weak_text.jsonl",
+      "byte_size": 1971868,
+      "sha256": "fd187397d1d0fcb4db493b69ec8219101a5da7f00b48373f0ade31686ac17ec6",
+      "row_count": 990,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 4,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/anthropic_claude-sonnet-4.5/param_only.jsonl",
+      "byte_size": 3445883,
+      "sha256": "0bb9a946d55e4f681d088ed8cab4c4c60e5340b2b093ce7a980aa4a6f1468b0c",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 3,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/anthropic_claude-sonnet-4.5/s2va/none/correct_context.jsonl",
+      "byte_size": 6512775,
+      "sha256": "40223b5af069e0f90066061ac6e25311dc17f7243b2930f6fbaf52e5b9d2e48a",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/anthropic_claude-sonnet-4.5/s2va/none/false_text.jsonl",
+      "byte_size": 6552883,
+      "sha256": "35b2c48735ed02341b00b17d7659f8c2b7de3c0e013a90688f1139e4e0855693",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/anthropic_claude-sonnet-4.5/s2va/none/irrelevant_text.jsonl",
+      "byte_size": 6285157,
+      "sha256": "45f9e66cbb9f417d1ba55ad14c9750edfa5a6c5a807f10beaa9a8dae59e003d8",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/anthropic_claude-sonnet-4.5/s2va/none/no_context.jsonl",
+      "byte_size": 5754150,
+      "sha256": "887abdb0fdfcd7429c5bbd1ed654aeca46d7d9c7df11e040b9b9df002f35d2cf",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/anthropic_claude-sonnet-4.5/s2va/none/shuffled_context.jsonl",
+      "byte_size": 6513397,
+      "sha256": "7a0bdccfa8b92cb6c561f8eca25335bd24b5ec0812b9a4d54a0c94dc1d01e5da",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/anthropic_claude-sonnet-4.5/s2va/none/true_text.jsonl",
+      "byte_size": 6493153,
+      "sha256": "bb748396ccee594117c01bb15eb70613dd25ca91ad2f0d39a4d84aeb4cd05236",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/anthropic_claude-sonnet-4.5/s2va_leaky/none/false_text.jsonl",
+      "byte_size": 7002622,
+      "sha256": "65ad94d561b2d76fbb42f32687267a4cc84ec5afd03a9f9cd2c6b745c7c9d6c7",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/anthropic_claude-sonnet-4.5/s2va_leaky/none/shuffled_context.jsonl",
+      "byte_size": 6801136,
+      "sha256": "1cffeeac3079b63fa652c6be74f8f82703a36bf8b0af506555212c2f5499ed1b",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/anthropic_claude-sonnet-4.5/visual_supremacy_only/none/correct_context.jsonl",
+      "byte_size": 1788966,
+      "sha256": "78424680053a4ff9b0ddc668d89f733098f13c3dd2ce4ce9107ee26eebf29ecc",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/anthropic_claude-sonnet-4.5/visual_supremacy_only/none/false_text.jsonl",
+      "byte_size": 1789716,
+      "sha256": "fc6497a78e1968bda1bbfbaf6e18ec5fc6ee1ec2e50fa88ec170b3ff4fd3fad2",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/anthropic_claude-sonnet-4.5/visual_supremacy_only/none/irrelevant_text.jsonl",
+      "byte_size": 1666054,
+      "sha256": "8b366caf9c216c6bdd5712a2ee4aa62ad2842bf1fcfa9d687511cfea88d32e3e",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/anthropic_claude-sonnet-4.5/visual_supremacy_only/none/no_context.jsonl",
+      "byte_size": 1395643,
+      "sha256": "f3155a40e36bc3821ef5cda9893960dfdbe72b39dc772249efd6a2b66123091e",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/anthropic_claude-sonnet-4.5/visual_supremacy_only/none/shuffled_context.jsonl",
+      "byte_size": 1427949,
+      "sha256": "32d1b7d413d0f7101ef40bbb02eb805f4cc04042cbb4dbcec9c98c9bf8d24eb3",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/anthropic_claude-sonnet-4.5/visual_supremacy_only/none/true_text.jsonl",
+      "byte_size": 1783401,
+      "sha256": "f487c151e61756bc8c6280bf2a2843c5cdeea3f97c66ccafd76a60f62d7509b0",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/anthropic_claude-sonnet-4.5/witness_only/none/correct_context.jsonl",
+      "byte_size": 6916772,
+      "sha256": "414bd81e946c40bb53451b62b86b44dbcc5563744f4d665ca1d0061db4168f59",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/anthropic_claude-sonnet-4.5/witness_only/none/false_text.jsonl",
+      "byte_size": 6935546,
+      "sha256": "f9ed0ac35b65776c324a29f6c0e3e9dcf329b06a3f60602310a9db7c7dfcc0a0",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/anthropic_claude-sonnet-4.5/witness_only/none/irrelevant_text.jsonl",
+      "byte_size": 6698305,
+      "sha256": "7466b0d58ac53ce2cf1fc2fcd0315461dac6398ed5f3a15be56943be51f19be3",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/anthropic_claude-sonnet-4.5/witness_only/none/no_context.jsonl",
+      "byte_size": 6168419,
+      "sha256": "02af68045b51326ab6adfbd790bf958d80bf13880a15e95dabc7d5c2f5ae771d",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/anthropic_claude-sonnet-4.5/witness_only/none/shuffled_context.jsonl",
+      "byte_size": 6922298,
+      "sha256": "a50b5d46a033341193d783b19000d981d937903d54758d3bc06f45d930458ae0",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/anthropic_claude-sonnet-4.5/witness_only/none/true_text.jsonl",
+      "byte_size": 6894153,
+      "sha256": "5d17abcfe16de5e2161c9e73f4b4768cbb255ee353df2e6fbe088252d5dd8bf2",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/google_gemini-2.5-pro/baseline_rag/false_text.jsonl",
+      "byte_size": 1793496,
+      "sha256": "60d6aa8c61e324baaa84f4d73d1c41e162d663dc7259440da5474ba704774761",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/google_gemini-2.5-pro/baseline_rag/irrelevant_text.jsonl",
+      "byte_size": 1498696,
+      "sha256": "92dab6590ec0b88302a0afb5449bef8a397376d44aaa25e28a2c003987c2201c",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/google_gemini-2.5-pro/baseline_rag/none/true_text.jsonl",
+      "byte_size": 8678,
+      "sha256": "2f29430b7f2b728e86c643c97604dc0efcc8f73563fd5b22cd4849ba8462cdee",
+      "row_count": 14,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 4,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/google_gemini-2.5-pro/baseline_rag/true_text.jsonl",
+      "byte_size": 1715066,
+      "sha256": "19a630a282969f79ee6915f8f989728d1862985e17d5738db539b4a50f986857",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/google_gemini-2.5-pro/cot_rag/false_text.jsonl",
+      "byte_size": 2507738,
+      "sha256": "9727046ae4113bca0d3af44c28a9bfaba596afa0f05da2507087ce2ac1671f25",
+      "row_count": 997,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/google_gemini-2.5-pro/cot_rag/irrelevant_text.jsonl",
+      "byte_size": 2335089,
+      "sha256": "9ac98a6cf5e2a0a8466af7814705a9a7581c6de9295c0f957d4f1a2ece1e135f",
+      "row_count": 995,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/google_gemini-2.5-pro/cot_rag/true_text.jsonl",
+      "byte_size": 2626009,
+      "sha256": "158f7cf34311205ca014bc2df9941af781230530bda27dbfab7ca8ffa86140fe",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/google_gemini-2.5-pro/dose_response/none/medium_text.jsonl",
+      "byte_size": 1606980,
+      "sha256": "65f2aade4555a4ba83e016557d46a1edbf20b145457a3e4c2e3778270e5971ab",
+      "row_count": 997,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 4,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/google_gemini-2.5-pro/dose_response/none/strong_text.jsonl",
+      "byte_size": 1871177,
+      "sha256": "bcda2e5a07d4ff868b64a53cbc2f96a7f0d9fc9d1f413efee0462b0546bc6567",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 4,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/google_gemini-2.5-pro/dose_response/none/weak_text.jsonl",
+      "byte_size": 1681493,
+      "sha256": "082b8d95705cad87bf9e4aebb84a0989fc12d7b348c62ccf516584a7a727eb24",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 4,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/google_gemini-2.5-pro/param_only.jsonl",
+      "byte_size": 1856101,
+      "sha256": "d2a4167a7bf081e8d69248bfb3d252a07c13b1836ec01ae8379c0ccb8b3338b5",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/google_gemini-2.5-pro/s2va/none/false_text.jsonl",
+      "byte_size": 3579493,
+      "sha256": "6537c762774a245adf9e064463d05ff37395830c352dc6861cc7a5a779bbfbfe",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 5,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/google_gemini-2.5-pro/s2va/none/irrelevant_text.jsonl",
+      "byte_size": 3476526,
+      "sha256": "8d595c5ec495d7241d277d5bc486b6d75aacffbc8a77a5381d9f0b4e0aafec15",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 5,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/google_gemini-2.5-pro/s2va/none/true_text.jsonl",
+      "byte_size": 3571915,
+      "sha256": "dd6c3b58274b4bdfb5d80097a494a7d2d96cc9a93401a0d4f45b68b6d0a8c632",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 5,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/google_gemini-2.5-pro/s2va_leaky/none/false_text.jsonl",
+      "byte_size": 2211287,
+      "sha256": "bf8dc697024a08bb383b1fc52bbde7414af4a60d1732d112a7923e8bf3586a34",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/google_gemini-2.5-pro/s2va_leaky/none/shuffled_context.jsonl",
+      "byte_size": 6819794,
+      "sha256": "0d70ddc4c4c9eb7bce9f7f403b2ec5f4b5bdb96ed559cb25a2debd8db5655aa6",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/google_gemini-2.5-pro/visual_supremacy_only/none/correct_context.jsonl",
+      "byte_size": 3908726,
+      "sha256": "900bfb1a58b2cceae926a6abdd18177d3d4d2b80683aa0fac449b46ee69893e1",
+      "row_count": 1178,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/google_gemini-2.5-pro/visual_supremacy_only/none/false_text.jsonl",
+      "byte_size": 3363351,
+      "sha256": "ddb8cddb8727e750cfd2fb27f43e1756ceb5538e8e294538fd2568e8b6c16292",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/google_gemini-2.5-pro/visual_supremacy_only/none/irrelevant_text.jsonl",
+      "byte_size": 3118805,
+      "sha256": "90a28df577796d56f4e46c69806a8d6247ca57220ea0a90066065cc977f63d7c",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/google_gemini-2.5-pro/visual_supremacy_only/none/no_context.jsonl",
+      "byte_size": 2780692,
+      "sha256": "a82928b70b259e3f4490fc7a83d17bf89c60821012996bdc1932944b3d3a28c4",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/google_gemini-2.5-pro/visual_supremacy_only/none/shuffled_context.jsonl",
+      "byte_size": 5730894,
+      "sha256": "4f0047821215fc98ebd0e7f0254ac848d82b182a687aae87abad410146fa6911",
+      "row_count": 1996,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/google_gemini-2.5-pro/visual_supremacy_only/none/true_text.jsonl",
+      "byte_size": 3269549,
+      "sha256": "a9e3be68cc3a9dfc9edb79f8943205875e039549f302ee8f5db56ef8cc676540",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/google_gemini-2.5-pro/witness_only/none/false_text.jsonl",
+      "byte_size": 3696323,
+      "sha256": "e39e15eef85cbd1fab28bf3a256d30dede20f6fae1824ab5cb7ce65ab48117c6",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 5,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/google_gemini-2.5-pro/witness_only/none/irrelevant_text.jsonl",
+      "byte_size": 3598314,
+      "sha256": "19eb46de2d13f35df2afdf5dcd1b89cbdd8da162ee4fd3468c9a126441c64b94",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 5,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/google_gemini-2.5-pro/witness_only/none/true_text.jsonl",
+      "byte_size": 3687683,
+      "sha256": "727d5c9ae36c2b3ff82ef330b156300524a566e86b441e69bb2162dd00ff9a37",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 5,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/moonshotai_kimi-k2.5/baseline_rag/false_text.jsonl",
+      "byte_size": 1749007,
+      "sha256": "6e3f7a850cd0cab6d76f1b6552034616063c6773706e9df5be9d11a5b3749096",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 4,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/moonshotai_kimi-k2.5/baseline_rag/irrelevant_text.jsonl",
+      "byte_size": 1756159,
+      "sha256": "5131887381a9e039f9270ff3185f0b0f92bf34b7e60b3d3b96b0f10b7717e717",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 4,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/moonshotai_kimi-k2.5/baseline_rag/true_text.jsonl",
+      "byte_size": 1851658,
+      "sha256": "957aa60cc1d61efcc3058a1eee05b009e52742b53124c40290cec7250ab59c98",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 4,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/moonshotai_kimi-k2.5/cot_rag/false_text.jsonl",
+      "byte_size": 8582595,
+      "sha256": "6c6052c40734e2754315923471652070252f2b24fbe00e0a28f61009c4fbd606",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/moonshotai_kimi-k2.5/cot_rag/irrelevant_text.jsonl",
+      "byte_size": 7576779,
+      "sha256": "1e67df319b16652d78aaa2c1c786d00750e466598cfff09dd7236625f928f179",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/moonshotai_kimi-k2.5/cot_rag/true_text.jsonl",
+      "byte_size": 7936016,
+      "sha256": "00fd8e8fc8fc3fe9cb96ba79835f4cfc27b05940a199cf2640d2bf60940d0f81",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/moonshotai_kimi-k2.5/dose_response/none/medium_text.jsonl",
+      "byte_size": 1561345,
+      "sha256": "609876eb453ae5546a7be62d8a4d11989e6687f74434a315c472f5952ea480af",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 4,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/moonshotai_kimi-k2.5/dose_response/none/strong_text.jsonl",
+      "byte_size": 1760646,
+      "sha256": "1ba08df3e600a15425f51ef6fdfcb9fc91151661a708d4f7f2fc21c61cf2f117",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 4,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/moonshotai_kimi-k2.5/dose_response/none/weak_text.jsonl",
+      "byte_size": 1601735,
+      "sha256": "9933aadc070a2028fb8204bd906b6cafb5e1b7b3c501b838510231ad51a704a5",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 4,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/moonshotai_kimi-k2.5/param_only.jsonl",
+      "byte_size": 5061508,
+      "sha256": "8206c32784cf16646e6c470461320348d7338b294ff0f68885336fe6f55ab3e0",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/moonshotai_kimi-k2.5/s2va/none/false_text.jsonl",
+      "byte_size": 5566773,
+      "sha256": "52f2da80f8ed7e8db3088de9cf462837be0b727afe9506dd5078897b5ab38fe9",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/moonshotai_kimi-k2.5/s2va/none/irrelevant_text.jsonl",
+      "byte_size": 5435674,
+      "sha256": "0498df37771a9a49936c99bc9c939ab2ec2b38b21bc28d6c8dec97842333797a",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/moonshotai_kimi-k2.5/s2va/none/true_text.jsonl",
+      "byte_size": 6020928,
+      "sha256": "1d3515985cf645a7056b4c2414c0c5eba9acf908e9ca31ada503fcbb42aa6a4c",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/moonshotai_kimi-k2.5/s2va_leaky/none/false_text.jsonl",
+      "byte_size": 5654916,
+      "sha256": "7cd708c2ff46ff6e06bf9a14526e87fc6ff9db8721a7c02d73915eb1f6149b7f",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/moonshotai_kimi-k2.5/s2va_leaky/none/shuffled_context.jsonl",
+      "byte_size": 5726892,
+      "sha256": "c14e271127190581f7145615fd15f79cc89c3507b9fb7a38d5be573e1e9946a7",
+      "row_count": 997,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/moonshotai_kimi-k2.5/visual_supremacy_only/none/false_text.jsonl",
+      "byte_size": 5397925,
+      "sha256": "18de628df7ac4b222f99a6da5eed7467a29b656da57f4d703f454c767631d960",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/moonshotai_kimi-k2.5/visual_supremacy_only/none/irrelevant_text.jsonl",
+      "byte_size": 4594937,
+      "sha256": "074c54b53592418029e11c15247188efd8bc6926777d1a31b79a16f648b22c31",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/moonshotai_kimi-k2.5/visual_supremacy_only/none/true_text.jsonl",
+      "byte_size": 6228612,
+      "sha256": "4d74c40799a0cb6e9a9b35329e7de1ff8e01818075f0fb9ea61f5cbb438cc270",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/moonshotai_kimi-k2.5/witness_only/none/false_text.jsonl",
+      "byte_size": 1408058,
+      "sha256": "4bf17dfaa5fa0153d96e24867e6eddb0d19c25fd14f122ce5ea5af164a96cbec",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/moonshotai_kimi-k2.5/witness_only/none/irrelevant_text.jsonl",
+      "byte_size": 1362047,
+      "sha256": "80535b2515d7faf6db0de059fb2b89195d221551032569788479a3b7c4d50d11",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/moonshotai_kimi-k2.5/witness_only/none/true_text.jsonl",
+      "byte_size": 1397797,
+      "sha256": "527cc19d7f0d8447c5bc23b3f6e60f5931f11fe09fe41279649de5eb4f373fb5",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/openai_gpt-5.1/adaptive_s2va/none/correct_context.jsonl",
+      "byte_size": 1859,
+      "sha256": "d4ed1a1c5c769f76a630d57214fb7b456368ad55b40bca2484504aaf8ff9f1d8",
+      "row_count": 1,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 5,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/openai_gpt-5.1/adaptive_s2va/none/false_text.jsonl",
+      "byte_size": 1999,
+      "sha256": "b61d10904a2e111612421e6d4c052ad5aeca941befcc2d4011e49d6045c1c1c3",
+      "row_count": 1,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 5,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/openai_gpt-5.1/adaptive_s2va/none/irrelevant_text.jsonl",
+      "byte_size": 1919,
+      "sha256": "b1f2634e7cc4f3e4d4e228ccc67c19193171d5fc3fef9313c5d68e81acfe1134",
+      "row_count": 1,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 5,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/openai_gpt-5.1/adaptive_s2va/none/no_context.jsonl",
+      "byte_size": 1593,
+      "sha256": "9526193fe64be5e5cfcc2b163dc56349c2c6906c6d28a24dc665c2126d33512e",
+      "row_count": 1,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 5,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/openai_gpt-5.1/adaptive_s2va/none/shuffled_context.jsonl",
+      "byte_size": 1978,
+      "sha256": "1449bc726ee9a3d7a40f25c2a0ec9826edd0dda3d9d710b952fba6b39b7173b7",
+      "row_count": 1,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 5,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/openai_gpt-5.1/adaptive_s2va/none/true_text.jsonl",
+      "byte_size": 2202,
+      "sha256": "70bfcc0b43cf8bd039db6db3689c7543abf1243ee9271ac4c13d0438809b97da",
+      "row_count": 1,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 5,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/openai_gpt-5.1/baseline_rag/false_text.jsonl",
+      "byte_size": 1253828,
+      "sha256": "e19889a4459e74aa8860a654952bb1787087b033f291ce8d4ff9f451e7d5d92d",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 5,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/openai_gpt-5.1/baseline_rag/irrelevant_text.jsonl",
+      "byte_size": 1236577,
+      "sha256": "0b4396b0f16a30202f1f091b6173fd769fd9495fc2c50d0ac2c43b0e48d0c26e",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 5,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/openai_gpt-5.1/baseline_rag/true_text.jsonl",
+      "byte_size": 1289766,
+      "sha256": "5f9a8544c3768712b8367c8f0d9cb2133e1cf9fd7f90724fcea2ee353ffdfdfc",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 5,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/openai_gpt-5.1/baseline_rag_ignore_context/false_text.jsonl",
+      "byte_size": 619080,
+      "sha256": "cbbbcec07aa5b26e474f53d6849bf32166f21137044551a9e7168c2689eaddf6",
+      "row_count": 499,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/openai_gpt-5.1/baseline_rag_strong_visual/false_text.jsonl",
+      "byte_size": 600701,
+      "sha256": "06844b4f379b6078f9dd4430adc46533163767ed5117ab19e64eaa153b015b98",
+      "row_count": 499,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/openai_gpt-5.1/caption_then_rag/false_text.jsonl",
+      "byte_size": 2258861,
+      "sha256": "bae12447ad32bbe442f612e7dc6d8cc6907911a1189ac4ffc300ede17b8a0d43",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/openai_gpt-5.1/caption_then_rag/irrelevant_text.jsonl",
+      "byte_size": 2078189,
+      "sha256": "4c38182cd688a302c5e40d59b754b49ada9cd726961504177a56635c61abfd0f",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/openai_gpt-5.1/caption_then_rag/true_text.jsonl",
+      "byte_size": 2146905,
+      "sha256": "26705b862955fbcdf386cbe5d2b7b720eae286c071a893148fa8d44c86293166",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/openai_gpt-5.1/cot_rag/false_text.jsonl",
+      "byte_size": 1429620,
+      "sha256": "9c0d1dc9b3af00b1c11686832005ee303b83f0bae97323bde740de72786f473a",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/openai_gpt-5.1/cot_rag/irrelevant_text.jsonl",
+      "byte_size": 1343357,
+      "sha256": "4eaf4ed18f6f86aafff3acdfbd0e2d3089880f93592a06a9b874ad7866404141",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/openai_gpt-5.1/cot_rag/true_text.jsonl",
+      "byte_size": 1406720,
+      "sha256": "1861b2538f3036a27a5d6e8a3ef4d070026a84de87bb6845cd93834005928448",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/openai_gpt-5.1/cove_style_verification/false_text.jsonl",
+      "byte_size": 734188,
+      "sha256": "a2c6f68246efa97bbe41dd1e14f119dad121beda401255525bc230fd81401100",
+      "row_count": 499,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/openai_gpt-5.1/dose_response/none/medium_text.jsonl",
+      "byte_size": 1050105,
+      "sha256": "a6c7f6ddfe5553ec7d1bd77775cae2dab3f9ac342ff7752ac94775377718f1a6",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 4,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/openai_gpt-5.1/dose_response/none/strong_text.jsonl",
+      "byte_size": 1247433,
+      "sha256": "0d4848894444693a412a5ccf6b4e590f84f1433bee5bc27025af94e4c6a8ce70",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 4,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/openai_gpt-5.1/dose_response/none/weak_text.jsonl",
+      "byte_size": 1076969,
+      "sha256": "af2c5a7e871c19d8c9111519b2fd8113067a6db9bdf7c69b0feab155d90bb98c",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 4,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/openai_gpt-5.1/evidence_separation/false_text.jsonl",
+      "byte_size": 898146,
+      "sha256": "0866b53f603ab1b04761cfaa0711abcb72d0e3a3e02ea7b4eb82fe1e816a273f",
+      "row_count": 499,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/openai_gpt-5.1/param_only.jsonl",
+      "byte_size": 1273205,
+      "sha256": "2f5380c1dfc54550cb015ca9d9eb2cca8039034fbbc1e2f361b8a0a463de0957",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/openai_gpt-5.1/s2va/none/false_text.jsonl",
+      "byte_size": 2831518,
+      "sha256": "7a69c30ab287e87349080f392f901602d5fe102f1e23b4ffe7dff6c7e067795a",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 5,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/openai_gpt-5.1/s2va/none/irrelevant_text.jsonl",
+      "byte_size": 2715664,
+      "sha256": "b6015ea5316daa349f4e008fd6082eb87920cf53a74714923115fd77bb353cc5",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 5,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/openai_gpt-5.1/s2va/none/true_text.jsonl",
+      "byte_size": 2772843,
+      "sha256": "fabec50890e43311dd82cc01c6e4d784cbe870ba2ca7147e921ab978764b4a2d",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 5,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/openai_gpt-5.1/s2va_leaky/none/false_text.jsonl",
+      "byte_size": 2054270,
+      "sha256": "c64cae7712e7511367995cd7e97028ae14f3a1759405db8faa5c4d06f2ebe917",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/openai_gpt-5.1/s2va_leaky/none/shuffled_context.jsonl",
+      "byte_size": 3692214,
+      "sha256": "359a367ac602fad7cea2759b8401656466387870d162e6988756ee41ba7802e8",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/openai_gpt-5.1/two_call_rag/false_text.jsonl",
+      "byte_size": 1946849,
+      "sha256": "ed2e94d0d636d785e1f03840888415a76f0bc841997e2f746702c75fcc7b4600",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/openai_gpt-5.1/two_call_rag/irrelevant_text.jsonl",
+      "byte_size": 1913188,
+      "sha256": "dfb3a4fdc5f8f43fa8c94881dcc23581969fa1caacb17dc63f02268ebebf3a44",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/openai_gpt-5.1/two_call_rag/true_text.jsonl",
+      "byte_size": 1980368,
+      "sha256": "40d469a3b6b6b3f6e407e1c44237c691c18e56899b262800e7d36af953115014",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/openai_gpt-5.1/visual_supremacy_only/none/correct_context.jsonl",
+      "byte_size": 1403736,
+      "sha256": "fb52f79f0484a067a3c18dc66c894ed439571502aa8f642f455e53493b1298dd",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/openai_gpt-5.1/visual_supremacy_only/none/false_text.jsonl",
+      "byte_size": 1382947,
+      "sha256": "0c95cb131b5f2ceff192ec3e69e6137a2ae7447f9829197083c0a7f0a66b0312",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/openai_gpt-5.1/visual_supremacy_only/none/irrelevant_text.jsonl",
+      "byte_size": 1336142,
+      "sha256": "d25348f106b02ff7f4a38e28700b8dd98a29259041f5bc23afe3ad0031b07c40",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/openai_gpt-5.1/visual_supremacy_only/none/no_context.jsonl",
+      "byte_size": 1039215,
+      "sha256": "1eb9570fc0d2654b68daa729957e34ee2c30548928f61e63346f0a9951f930b5",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/openai_gpt-5.1/visual_supremacy_only/none/shuffled_context.jsonl",
+      "byte_size": 1068617,
+      "sha256": "3a93d1a602c39673ecf5935ad3988844e92562c1a5271c3333957d28e3b6fb8b",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/openai_gpt-5.1/visual_supremacy_only/none/true_text.jsonl",
+      "byte_size": 1397779,
+      "sha256": "da014e1834f0977e5ddc1ae28de7a11767020140a423d2d300a6da9de5fe98f2",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/openai_gpt-5.1/witness_only/none/false_text.jsonl",
+      "byte_size": 2941362,
+      "sha256": "7c9ede908d809aea3d4ab912225476ff4e49ca5ff968ee8c2331139f1001f435",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 5,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/openai_gpt-5.1/witness_only/none/irrelevant_text.jsonl",
+      "byte_size": 2830434,
+      "sha256": "b5785d2684615556ec30a1d81eabd53c52d57aac2ad2aad7b918895f3ab18a49",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 5,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/openai_gpt-5.1/witness_only/none/true_text.jsonl",
+      "byte_size": 2881625,
+      "sha256": "653547223fffc2b416caae2aed6de72b0a64af9a7e66bfd63a3e84a4a3433846",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 5,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/qwen_qwen3-vl-235b-a22b-instruct/baseline_rag/false_text.jsonl",
+      "byte_size": 2297264,
+      "sha256": "fd8811fa823f12b8274df902218f7e37deb022aceb46c2a377a315f26437113d",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 4,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/qwen_qwen3-vl-235b-a22b-instruct/baseline_rag/irrelevant_text.jsonl",
+      "byte_size": 2057324,
+      "sha256": "a61694e31780e818a9267a3655e72f56ed2cda1fc6c2645e21a510f1ae3ecda9",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 4,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/qwen_qwen3-vl-235b-a22b-instruct/baseline_rag/true_text.jsonl",
+      "byte_size": 2334383,
+      "sha256": "caf4a173387580d6ae645ff90b0694379cd893576203b94a7485e7b8df9ad898",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 4,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/qwen_qwen3-vl-235b-a22b-instruct/cot_rag/false_text.jsonl",
+      "byte_size": 3551205,
+      "sha256": "40089d22311a9e05a460958f4ef50a6410ea86b1cb6a0c0aacdab08984df6760",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/qwen_qwen3-vl-235b-a22b-instruct/cot_rag/irrelevant_text.jsonl",
+      "byte_size": 3183643,
+      "sha256": "283eae056bd78552919d5678139e41a38546a83128fc5344cd28548d80c523bc",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/qwen_qwen3-vl-235b-a22b-instruct/cot_rag/true_text.jsonl",
+      "byte_size": 3710958,
+      "sha256": "f5b44d92c7978e0dd3fe43c14c3122b544d411ef1ebd5edc04537553e1b81c9a",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/qwen_qwen3-vl-235b-a22b-instruct/dose_response/none/medium_text.jsonl",
+      "byte_size": 1978650,
+      "sha256": "8ab761246d748bc259c4d017d9fc72b29eaca3a06ea02d477efcbab99722578d",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 4,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/qwen_qwen3-vl-235b-a22b-instruct/dose_response/none/strong_text.jsonl",
+      "byte_size": 2297395,
+      "sha256": "2f31213c13e3b493161d7960344ada0a3bb49c14693b17a1fe8cb9794d561167",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 4,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/qwen_qwen3-vl-235b-a22b-instruct/dose_response/none/weak_text.jsonl",
+      "byte_size": 2008683,
+      "sha256": "4bd9bd7f9f1027974001c9bd231e6c737936db1ad32864d2c02b7f0717ac5da2",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 4,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/qwen_qwen3-vl-235b-a22b-instruct/param_only.jsonl",
+      "byte_size": 2325394,
+      "sha256": "56521c58cd20d3c9472c5464088cdcb19e1e71a1427b5db7251c8ddb23bbf4db",
+      "row_count": 997,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/qwen_qwen3-vl-235b-a22b-instruct/s2va/none/false_text.jsonl",
+      "byte_size": 3891967,
+      "sha256": "af875ae12f8b28cd71ae1515cb2c03590fbc2fe6db7ae63b9b7e0fd0bec22b03",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/qwen_qwen3-vl-235b-a22b-instruct/s2va/none/irrelevant_text.jsonl",
+      "byte_size": 3693429,
+      "sha256": "d3de4f5a44e87a08ce0d2a0a93ba76fa20604245be691fee511c1987103d8aeb",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/qwen_qwen3-vl-235b-a22b-instruct/s2va/none/true_text.jsonl",
+      "byte_size": 3965864,
+      "sha256": "7efc927c5a952170515d3348f6c1c9f4509a19d14f88723ea5dc33c02ffdd341",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/qwen_qwen3-vl-235b-a22b-instruct/s2va_leaky/none/false_text.jsonl",
+      "byte_size": 1928666,
+      "sha256": "86cf15c546bce509c20f37ec6f2b515977de02612e606a7f62feaa5c3b781c55",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/qwen_qwen3-vl-235b-a22b-instruct/s2va_leaky/none/shuffled_context.jsonl",
+      "byte_size": 3602422,
+      "sha256": "b7588df994d2723a34d9d9ed090ff690a942f48b61c7fa1fd2adebf777330dbe",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/qwen_qwen3-vl-235b-a22b-instruct/visual_supremacy_only/none/correct_context.jsonl",
+      "byte_size": 1376808,
+      "sha256": "2e546c0d3f1022f2c5f2e69006d7d9c4ec87b199b37f6bbb3b3cbe7d4c31d3b8",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/qwen_qwen3-vl-235b-a22b-instruct/visual_supremacy_only/none/false_text.jsonl",
+      "byte_size": 1370316,
+      "sha256": "3c4fce278823d329cfb846cb115befc1a2570bc10ce6d886f9363047c6d00c27",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/qwen_qwen3-vl-235b-a22b-instruct/visual_supremacy_only/none/irrelevant_text.jsonl",
+      "byte_size": 1314648,
+      "sha256": "c17b05e22c68ac36065ce7d328f69124f480a7903f6b7be09bb6b2f65309b1cb",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/qwen_qwen3-vl-235b-a22b-instruct/visual_supremacy_only/none/no_context.jsonl",
+      "byte_size": 1035617,
+      "sha256": "6352d0cf571e02c7547e8373e91e1e53fa5553c5000c70423180594cef7864b8",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/qwen_qwen3-vl-235b-a22b-instruct/visual_supremacy_only/none/shuffled_context.jsonl",
+      "byte_size": 1082235,
+      "sha256": "532ab19ab643c7f32e19dd59e23cefeee47ecff3d975796d4839347af3719546",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/qwen_qwen3-vl-235b-a22b-instruct/visual_supremacy_only/none/true_text.jsonl",
+      "byte_size": 1367735,
+      "sha256": "91bf873a4f4355e155a9b1468795681f803fd38ec6f738285f84711131eb57b8",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/qwen_qwen3-vl-235b-a22b-instruct/witness_only/none/false_text.jsonl",
+      "byte_size": 4408220,
+      "sha256": "1a4da73a07b39f445c49d005ac02b6b4f7063ac6baff149d0dc9ff1954be2e10",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/qwen_qwen3-vl-235b-a22b-instruct/witness_only/none/irrelevant_text.jsonl",
+      "byte_size": 4220961,
+      "sha256": "1b1ca37743a2123712a766cc97ff85ec99e3502f98eef121f4f805975b35dae9",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/qwen_qwen3-vl-235b-a22b-instruct/witness_only/none/true_text.jsonl",
+      "byte_size": 4481479,
+      "sha256": "54f27ea8884c340dab9048d9c5d0b41ee9c1af1401ab972566fe0ba8ff8c766b",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/qwen_qwen3-vl-235b-a22b-thinking/baseline_rag/false_text.jsonl",
+      "byte_size": 2163430,
+      "sha256": "c543fe0f66f933c8d45c46a0614dd7718721fe3569d08a1b1e8e1c2a94828fbd",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 4,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/qwen_qwen3-vl-235b-a22b-thinking/baseline_rag/irrelevant_text.jsonl",
+      "byte_size": 1959052,
+      "sha256": "30f653b42b86faab7c9a106a4c291e4f4deb3fc95da4336539744bb7c4a21dca",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 4,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/qwen_qwen3-vl-235b-a22b-thinking/baseline_rag/true_text.jsonl",
+      "byte_size": 2103774,
+      "sha256": "1ab684bdb0dd49e1b27f7997ab46de4b01ee8188105ba82d0eb354489144d915",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 4,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/qwen_qwen3-vl-235b-a22b-thinking/cot_rag/false_text.jsonl",
+      "byte_size": 6545347,
+      "sha256": "6d68920430ffba2a73f773f9586d581d440ca7045ea49e17e6a27526a32e971c",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/qwen_qwen3-vl-235b-a22b-thinking/cot_rag/irrelevant_text.jsonl",
+      "byte_size": 5669517,
+      "sha256": "1b990bbb901b88dad6276e8c4ed00a1ecb9faf07a83ba898248ffd9ed5cbecd8",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/qwen_qwen3-vl-235b-a22b-thinking/cot_rag/true_text.jsonl",
+      "byte_size": 6145178,
+      "sha256": "0c6c34a8b5226e6c8860ed18f31deb69b761eb286d189157435436ff65493325",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/qwen_qwen3-vl-235b-a22b-thinking/dose_response/none/medium_text.jsonl",
+      "byte_size": 1646844,
+      "sha256": "de38ff31728056131cb2efeb8d9e76af81c1cf87bb308ae966bb9ea4ee0fb808",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 4,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/qwen_qwen3-vl-235b-a22b-thinking/dose_response/none/strong_text.jsonl",
+      "byte_size": 2033279,
+      "sha256": "848477130e1c51103e66f31936138ebfaa8e851091135d39e94bb63756663f33",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 4,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/qwen_qwen3-vl-235b-a22b-thinking/dose_response/none/weak_text.jsonl",
+      "byte_size": 1682363,
+      "sha256": "ea7f205acd09ab537a2ec5df2f85121a3198f2981b5284d5b9a1b84ea647e845",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 4,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/qwen_qwen3-vl-235b-a22b-thinking/param_only.jsonl",
+      "byte_size": 3067441,
+      "sha256": "4f53507eed308afd3c0c38732c9f606cf04f0b7ada8f9b89a9b32abbe57b2e1b",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/qwen_qwen3-vl-235b-a22b-thinking/s2va/none/false_text.jsonl",
+      "byte_size": 4710899,
+      "sha256": "dc782bdf425ce46a7ba8f8c67f3e454802003561e6304bd5db9f04f3ffe63d4d",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/qwen_qwen3-vl-235b-a22b-thinking/s2va/none/irrelevant_text.jsonl",
+      "byte_size": 4546232,
+      "sha256": "6b344028ede667195bd9da3dae14327831533372c7c11f12e6f33a91a62d0996",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/qwen_qwen3-vl-235b-a22b-thinking/s2va/none/true_text.jsonl",
+      "byte_size": 5052938,
+      "sha256": "b46632453c25f4511cf557ad29ef216c10a580eb34dcc0c08751e28eb7c994b6",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/qwen_qwen3-vl-235b-a22b-thinking/s2va_leaky/none/false_text.jsonl",
+      "byte_size": 4629143,
+      "sha256": "3df715278f16ab5aec9ea41f9f6cea81d0d62c699e007f3f998f8d623c1acd39",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/qwen_qwen3-vl-235b-a22b-thinking/s2va_leaky/none/shuffled_context.jsonl",
+      "byte_size": 4529618,
+      "sha256": "1a7d9c6750d61af1b56d98115fca4c705b488e2d85c7618a820d09fecfb9545a",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/qwen_qwen3-vl-235b-a22b-thinking/visual_supremacy_only/none/correct_context.jsonl",
+      "byte_size": 3097228,
+      "sha256": "e4f2b0d20b0b9685a87e1a04291c19c8afb26c0a1b633e46a8397eafe9d0397e",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/qwen_qwen3-vl-235b-a22b-thinking/visual_supremacy_only/none/false_text.jsonl",
+      "byte_size": 3032442,
+      "sha256": "efb14f41fcbd4ec4edaea505d9c5c5ae6af95fbe6bc20ee2244b885ff048f71d",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/qwen_qwen3-vl-235b-a22b-thinking/visual_supremacy_only/none/irrelevant_text.jsonl",
+      "byte_size": 2486402,
+      "sha256": "d9fc8b34d099bbd6740f884011ca88bc97ec8589e3d5942ebb7f40644e366438",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/qwen_qwen3-vl-235b-a22b-thinking/visual_supremacy_only/none/no_context.jsonl",
+      "byte_size": 2118140,
+      "sha256": "f25ad6e4056e7d850b5624f235c07f9f4303657935a49c1f6ce07c0152cecc85",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/qwen_qwen3-vl-235b-a22b-thinking/visual_supremacy_only/none/shuffled_context.jsonl",
+      "byte_size": 2149955,
+      "sha256": "205c85a6b9ce4cc6be960ab7cd5ad345b80d2db6e3994a8e1aa8e7a3360cd395",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/qwen_qwen3-vl-235b-a22b-thinking/visual_supremacy_only/none/true_text.jsonl",
+      "byte_size": 3105983,
+      "sha256": "5cf1de0885d5bc98e205d102d89e1d159baef8690ee28495a1e6658a0a93cce4",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/qwen_qwen3-vl-235b-a22b-thinking/witness_only/none/false_text.jsonl",
+      "byte_size": 5136139,
+      "sha256": "977f673eecc90c9fcfd241a5346b9f9c6a1b806b08d1ee3f8ffed69c2a862a27",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/qwen_qwen3-vl-235b-a22b-thinking/witness_only/none/irrelevant_text.jsonl",
+      "byte_size": 4989801,
+      "sha256": "8aa848349df4b3df5849d957002693df82755ce848355209baca11f4ffe95411",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results/qwen_qwen3-vl-235b-a22b-thinking/witness_only/none/true_text.jsonl",
+      "byte_size": 5483860,
+      "sha256": "67fda0c201767c3348ce2d03825f21e0f62cacfac4c5db6cc02d64ef79b25536",
+      "row_count": 998,
+      "compact_output_path": "results/compact/gemini_generated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results_non_gemini/google_gemini-2.5-pro/baseline_rag/false_text.jsonl",
+      "byte_size": 139511,
+      "sha256": "55499dc1c9c97e9f70f91434b09f3a15a37d923ce1920d1325742d9d92e4b8e4",
+      "row_count": 100,
+      "compact_output_path": "results/compact/gpt4o_regenerated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 4,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results_non_gemini/google_gemini-2.5-pro/baseline_rag/true_text.jsonl",
+      "byte_size": 133721,
+      "sha256": "fe6b64d4a49b2a14811dcf312eb5c9013cf966e3040245141d4b5b953e704e45",
+      "row_count": 100,
+      "compact_output_path": "results/compact/gpt4o_regenerated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 4,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results_non_gemini/google_gemini-2.5-pro/s2va/none/false_text.jsonl",
+      "byte_size": 542314,
+      "sha256": "665313d6447260022d7e676e63376552939f865bacb2ca78c38265f8d368c20e",
+      "row_count": 100,
+      "compact_output_path": "results/compact/gpt4o_regenerated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results_non_gemini/google_gemini-2.5-pro/visual_supremacy_only/none/false_text.jsonl",
+      "byte_size": 915222,
+      "sha256": "3fbb9ce13af24814aa14b6f074d6e098194f479f2e110436d5a8b64da0364367",
+      "row_count": 100,
+      "compact_output_path": "results/compact/gpt4o_regenerated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results_non_gemini/google_gemini-2.5-pro/witness_only/none/false_text.jsonl",
+      "byte_size": 126629,
+      "sha256": "dfd9b09b7dac649eff3d37024d4b201bc28706d5311261bb10f2f3c43b2be913",
+      "row_count": 100,
+      "compact_output_path": "results/compact/gpt4o_regenerated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results_non_gemini/moonshotai_kimi-k2.5/baseline_rag/false_text.jsonl",
+      "byte_size": 150650,
+      "sha256": "7cb433c25efff12637722db6cabf81b2e301c4ed208becaf650d676d84f2f5dd",
+      "row_count": 100,
+      "compact_output_path": "results/compact/gpt4o_regenerated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 4,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results_non_gemini/moonshotai_kimi-k2.5/baseline_rag/true_text.jsonl",
+      "byte_size": 145211,
+      "sha256": "59f243f8391e33c6b280c3b907ec21b8a4c2df429d9e207d23ea6779ff4ce15b",
+      "row_count": 100,
+      "compact_output_path": "results/compact/gpt4o_regenerated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 4,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results_non_gemini/moonshotai_kimi-k2.5/s2va/none/false_text.jsonl",
+      "byte_size": 434858,
+      "sha256": "cf15d3c96e7f0105e1ec4f3db461cf35f3785559bb2af190bed86125334da18d",
+      "row_count": 100,
+      "compact_output_path": "results/compact/gpt4o_regenerated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results_non_gemini/moonshotai_kimi-k2.5/visual_supremacy_only/none/false_text.jsonl",
+      "byte_size": 273985,
+      "sha256": "b9928aa7bac60c7c42502895a3690d9dc06efd9eb13e2d8f935d82757c7896e0",
+      "row_count": 100,
+      "compact_output_path": "results/compact/gpt4o_regenerated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results_non_gemini/moonshotai_kimi-k2.5/witness_only/none/false_text.jsonl",
+      "byte_size": 115368,
+      "sha256": "711788985227859d370668c15bf80e6edb54aec48d01fe2a3ddec5b85653cc5d",
+      "row_count": 100,
+      "compact_output_path": "results/compact/gpt4o_regenerated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results_non_gemini/openai_gpt-5.1/baseline_rag/false_text.jsonl",
+      "byte_size": 98631,
+      "sha256": "77986c7b308ba3b27064761231bc0db0c05ea02b663eaee8f75b0268aee3664e",
+      "row_count": 100,
+      "compact_output_path": "results/compact/gpt4o_regenerated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 4,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results_non_gemini/openai_gpt-5.1/baseline_rag/true_text.jsonl",
+      "byte_size": 97624,
+      "sha256": "4fb72dfafa61e7ebbb3101e8443bba76915251857e1501a1e81778c9394d995e",
+      "row_count": 100,
+      "compact_output_path": "results/compact/gpt4o_regenerated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 4,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results_non_gemini/openai_gpt-5.1/s2va/none/false_text.jsonl",
+      "byte_size": 289244,
+      "sha256": "ff2cb65ce97cca3adb09efc18940764a98203ddb53af2614e0c2d6afcef17ab8",
+      "row_count": 100,
+      "compact_output_path": "results/compact/gpt4o_regenerated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results_non_gemini/openai_gpt-5.1/visual_supremacy_only/none/false_text.jsonl",
+      "byte_size": 113288,
+      "sha256": "63b7909177c2246df33a51658061282027b1de4c5287882345eb43c95bf238dd",
+      "row_count": 100,
+      "compact_output_path": "results/compact/gpt4o_regenerated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results_non_gemini/openai_gpt-5.1/witness_only/none/false_text.jsonl",
+      "byte_size": 115823,
+      "sha256": "5b7a4fc53e5b0a25ed87e5b0ef1a00d851e6c4b69cf072cb1f28a6883c695a7e",
+      "row_count": 100,
+      "compact_output_path": "results/compact/gpt4o_regenerated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results_non_gemini/qwen_qwen3-vl-235b-a22b-instruct/baseline_rag/false_text.jsonl",
+      "byte_size": 171169,
+      "sha256": "15f573fc3df1df42e0020f402530950c3c1f9680d34aa02a66369eb7342f5b93",
+      "row_count": 100,
+      "compact_output_path": "results/compact/gpt4o_regenerated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 4,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results_non_gemini/qwen_qwen3-vl-235b-a22b-instruct/baseline_rag/true_text.jsonl",
+      "byte_size": 168564,
+      "sha256": "8846eb1139d4e2eb5c2ded4047540d0173184a785326427b7d23ce5e44aaa705",
+      "row_count": 100,
+      "compact_output_path": "results/compact/gpt4o_regenerated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 4,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results_non_gemini/qwen_qwen3-vl-235b-a22b-instruct/s2va/none/false_text.jsonl",
+      "byte_size": 303423,
+      "sha256": "3862d5dba008a00794e33b6522f5ee33ddfa458749ca48099e6c8b8570771950",
+      "row_count": 100,
+      "compact_output_path": "results/compact/gpt4o_regenerated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results_non_gemini/qwen_qwen3-vl-235b-a22b-instruct/visual_supremacy_only/none/false_text.jsonl",
+      "byte_size": 113507,
+      "sha256": "0159019b7b42988b8300cbe3ff3c42b6f779bf1f626dc3b67c7d4f7b9441f013",
+      "row_count": 100,
+      "compact_output_path": "results/compact/gpt4o_regenerated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    },
+    {
+      "original_relative_path": "results_non_gemini/qwen_qwen3-vl-235b-a22b-instruct/witness_only/none/false_text.jsonl",
+      "byte_size": 113544,
+      "sha256": "515b76692b2b0402cb1351380b061d399972b258679ced63166929f3d2f6c556",
+      "row_count": 100,
+      "compact_output_path": "results/compact/gpt4o_regenerated.jsonl",
+      "reason_for_removal": "Data minimization: remove prompts, answers, reasoning, and provider metadata while retaining reported numeric metrics.",
+      "removed_field_count": 6,
+      "removed_field_categories": [
+        "model_generated_text",
+        "reasoning_and_judge_metadata",
+        "query_or_reference_text",
+        "provider_or_run_metadata"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "decision": "POST_DOCUMENTED_PREPROCESSING_EXACT_RECOVERY",
+  "verdict": "RELEASE_CANDIDATE_READY_FOR_AUTHOR_REVIEW",
+  "dataset_repository": "ILSVRC/imagenet-1k",
+  "dataset_revision": "49e2ee26f3810fb5a7536bbf732a7b07389a47b5",
+  "selection_specification": {
+    "split": "train",
+    "streaming": true,
+    "shuffle_seed": 42,
+    "shuffle_buffer_size": 10000,
+    "minimum_width": 256,
+    "minimum_height": 256,
+    "selection_count": 500
+  },
+  "bounded_decoder_environments": [
+    {"pillow_version": "10.4.0", "libjpeg_reported_version": "6.2"},
+    {"pillow_version": "11.3.0", "libjpeg_reported_version": "6.2"},
+    {"pillow_version": "12.3.0", "libjpeg_reported_version": "6.2"}
+  ],
+  "decoder_environment_result": "All three environments produced identical untransformed, EXIF-transposed, and max-side-1536 LANCZOS hashes for the applicable cases.",
+  "canonical_preprocessing": {
+    "order": [
+      "frozen stream selection on source dimensions",
+      "EXIF orientation normalization",
+      "RGB conversion with ICC profile preservation",
+      "intermediate PNG encoding",
+      "PNG-size-triggered max-side-1536 LANCZOS resize",
+      "canonical selection-index naming"
+    ],
+    "png_size_trigger_bytes": 3145728,
+    "png_size_trigger_operator": ">",
+    "png_save_parameters": {"format": "PNG", "compress_level": 6, "optimize": false, "icc_profile": "preserved when present"},
+    "resize_dimension_rounding": "int(width*ratio), int(height*ratio) (floor for positive values)",
+    "resize_applied_selection_indices": [304],
+    "exif_normalization_selection_indices": [331],
+    "explicitly_verified_not_resized_selection_indices": [477, 494],
+    "git_history_boundary": {"largest_unchanged_png_bytes": 2996612, "smallest_changed_png_bytes": 3417733},
+    "threshold_limitation": "The one-off historical script is absent. Git blobs reproduce the complete changed/unchanged partition but cannot distinguish decimal 3,000,000 from binary 3,145,728; the release pins 3 MiB exactly."
+  },
+  "cases": [
+    {
+      "selection_index": 304,
+      "zero_based_stream_index": 336,
+      "private_filename": "303.png",
+      "source_path_or_key": "n07836838_10710_n07836838.JPEG",
+      "class_label": 960,
+      "source_dimensions": [2400, 2307],
+      "private_dimensions": [1536, 1476],
+      "raw_source_sha256": "fed7b403acbf92080ef2d71dd5d54f5f1dc6ab18d84d60b238835d19c861a8ed",
+      "private_file_sha256": "090df36839ae538f71ab6973a16572a2f28d513acc5ae367d1ba45989f2ca347",
+      "private_decoded_rgb_sha256": "9ed3e429c83cce5691b93f287f0daf65482eababeb0fe3adab6da9ce99e3186b",
+      "current_source_decoded_rgb_sha256": "98238827bc92f0bd5eab3697b9293311e2bc9b7c2960cae58139d59f607da9ee",
+      "source_mode": "RGB",
+      "private_mode": "RGB",
+      "source_exif_orientation": 1,
+      "private_exif_orientation": null,
+      "source_icc_profile_sha256": "304f569a83c1e5eddaddac54e99ed03339333db013738bb499ab64f049887e28",
+      "private_icc_profile_sha256": "304f569a83c1e5eddaddac54e99ed03339333db013738bb499ab64f049887e28",
+      "dimensions_identical_before_transform": false,
+      "direct_pixel_metrics": {
+        "maximum_absolute_channel_difference": null,
+        "mean_absolute_channel_difference": null,
+        "fraction_of_differing_pixels": null,
+        "mse": null,
+        "psnr_db": null,
+        "reason": "Undefined because dimensions differ"
+      },
+      "verified_transform": "resize RGB source to max side 1536 using Pillow LANCZOS and floor each scaled dimension",
+      "transform_aligned_pixel_metrics": {
+        "dimensions_identical": true,
+        "maximum_absolute_channel_difference": 0,
+        "mean_absolute_channel_difference": 0.0,
+        "fraction_of_differing_pixels": 0.0,
+        "mse": 0.0,
+        "psnr_db": "infinite"
+      },
+      "archive_evidence": {
+        "original_revision": "0616dca9d3fde73263a6b65767820f0650155a7d",
+        "original_file_sha256": "ee70aa345899ca2bbbcec7438f1e6fe98baf399269dab0cfda432680a512ee84",
+        "original_decoded_rgb_sha256_matches_current_source": true,
+        "resize_revision": "125c888857884dbb19942fdfe4e6c41430591e04",
+        "resize_commit_subject": "Add Qwen-Thinking evaluation, fix image size issues, add prompts documentation"
+      },
+      "unique_match_evidence": {
+        "private_assignments_are_one_to_one_across_500": true,
+        "deterministic_transform_hash_match_count": 1,
+        "dhash_bits": 256,
+        "expected_candidate_distance": 0,
+        "second_candidate_distance": 86,
+        "candidate_distance_margin": 86
+      },
+      "classification": "documented evaluation-input preprocessing; post-preprocessing decoded pixels match the archive exactly"
+    },
+    {
+      "selection_index": 331,
+      "zero_based_stream_index": 367,
+      "private_filename": "330.png",
+      "source_path_or_key": "n03998194_7186_n03998194.JPEG",
+      "class_label": 741,
+      "source_dimensions": [1010, 1564],
+      "private_dimensions": [1564, 1010],
+      "raw_source_sha256": "60948b3c9dfeef4795923b7f72af30139f7da467ae93090fbbca83c6663837d0",
+      "private_file_sha256": "333f7e61d926038f9c090238c78c5bd839b74850aab5e7fc6bffde4bd93497f5",
+      "private_decoded_rgb_sha256": "4f2d2fc773316505d2e8f2527cdb99ebfab93125384d1aa38162bc25bff7b38e",
+      "current_source_decoded_rgb_sha256": "ea702e10d79a723ccebb6e7b8476f0a7fa6dc71e8141e95082c174feef848d81",
+      "source_mode": "RGB",
+      "private_mode": "RGB",
+      "source_exif_orientation": 8,
+      "private_exif_orientation": null,
+      "source_icc_profile_sha256": null,
+      "private_icc_profile_sha256": null,
+      "dimensions_identical_before_transform": false,
+      "direct_pixel_metrics": {
+        "maximum_absolute_channel_difference": null,
+        "mean_absolute_channel_difference": null,
+        "fraction_of_differing_pixels": null,
+        "mse": null,
+        "psnr_db": null,
+        "reason": "Undefined because stored dimensions differ before EXIF orientation is applied"
+      },
+      "verified_transform": "apply EXIF orientation 8 and convert to RGB",
+      "transform_aligned_pixel_metrics": {
+        "dimensions_identical": true,
+        "maximum_absolute_channel_difference": 0,
+        "mean_absolute_channel_difference": 0.0,
+        "fraction_of_differing_pixels": 0.0,
+        "mse": 0.0,
+        "psnr_db": "infinite"
+      },
+      "archive_evidence": {
+        "original_revision": "0616dca9d3fde73263a6b65767820f0650155a7d",
+        "original_file_sha256": "333f7e61d926038f9c090238c78c5bd839b74850aab5e7fc6bffde4bd93497f5",
+        "working_tree_file_is_unchanged_from_original_revision": true
+      },
+      "unique_match_evidence": {
+        "private_assignments_are_one_to_one_across_500": true,
+        "deterministic_transform_hash_match_count": 1,
+        "dhash_bits": 256,
+        "expected_candidate_distance": 0,
+        "second_candidate_distance": 95,
+        "candidate_distance_margin": 95
+      },
+      "classification": "documented EXIF orientation normalization; decoder-level representation difference"
+    }
+  ],
+  "summary": "All 500 source identities and stream positions are uniquely resolved, and all 500 archived evaluation inputs reproduce exactly after documented preprocessing. Selection 331 is EXIF-normalized and selection 304 is resized by the historical PNG-size trigger. Downloaded raw files are not claimed to be 500/500 pixel-identical before preprocessing."
+}
