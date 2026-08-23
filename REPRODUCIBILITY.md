@@ -1,22 +1,21 @@
 # Reproducibility
 
-## Offline release gates
+## Offline verification
 
 ```bash
 uv sync
 uv run python -c "import src"
-uv run python scripts/verify_reported_numbers.py
-uv run python scripts/verify_release_manifest.py
 uv run pytest
+uv run python scripts/verify_reported_numbers.py
 ```
 
-The headline verifier explicitly filters generator split, image type, model, phase, text condition, and attack. Inference and LLM judging are separate paid stages.
+The headline verifier explicitly filters generator split, image type, model, phase, text condition, and attack. It recomputes the four reported values from `results/compact/` without hosted model calls.
 
 ## Image provenance
 
 Canonical decoded-RGB hashes use dimensions plus row-major RGB bytes as documented in `DATA_CARD.md`.
 
-WHOOPS recovery command:
+### WHOOPS
 
 ```bash
 uv run --extra collectors python scripts/build_whoops_manifest.py \
@@ -26,24 +25,30 @@ uv run --extra collectors python scripts/build_whoops_manifest.py \
   --legacy-image-revision 213b8c1dbf058e1132839c1084b3ec4166315485
 ```
 
-Result: 466/499 exact current-file matches plus 33/499 deterministic-transform verifications, for 499/499 resolved source identities and 0 unresolved or ambiguous cases. Each transformed row requires an initial Git blob that exactly matches one official source and an exact decoded-RGB match after the recorded LANCZOS transform. No fuzzy candidate is promoted.
+The recovered mapping contains 466 exact current-file matches and 33 exact deterministic-transform verifications, resolving all 499 source identities without fuzzy promotion.
 
-ImageNet reconstruction at revision `49e2ee26f3810fb5a7536bbf732a7b07389a47b5` with archive-date-compatible `datasets==4.4.2` and Pillow 12.3.0 achieves 500/500 source identities, 500/500 unique assignments, and 500/500 post-preprocessing decoded-pixel matches. Pillow 10.4.0, 11.3.0, and 12.3.0 produced identical relevant forensic hashes. `image_0228.png` is selection 229.
+### ImageNet-1k
 
-The four distinct stages are: (1) select the first 500 eligible frozen-stream examples; (2) normalize EXIF, RGB/ICC, then encode an intermediate PNG with compression level 6 and `optimize=false`; (3) if that PNG is larger than the pinned 3 MiB (`3,145,728` bytes) trigger, resize to maximum side 1536 using Pillow LANCZOS and `int()` floor dimensions; and (4) map the canonical selection index to the independently recovered historical private filename. The evaluation input is the resulting post-normalization image, not the downloaded raw file. Selection 304 is resized; selection 331 is EXIF-normalized; 477 and 494 remain unresized. See `data/manifests/imagenet_forensic_report.json`.
+Revision `49e2ee26f3810fb5a7536bbf732a7b07389a47b5`, `datasets==4.4.2`, and Pillow 12.3.0 recover 500/500 source identities, 500/500 unique assignments, and 500/500 exact decoded-pixel matches after documented preprocessing.
 
-After EXIF-orientation normalization, images are encoded as PNG (compression level 6, without optimization). Files exceeding 3 MiB are resized with LANCZOS to a maximum side length of 1,536 pixels; this affects one of the 500 normal images.
+The reconstruction stages are:
+
+1. stream the training split, shuffle with seed 42 and buffer size 10,000, retain images at least 256 pixels in both dimensions, and select the first 500 eligible examples;
+2. normalize EXIF orientation, convert to RGB while preserving ICC, and encode an intermediate PNG with compression level 6 and `optimize=false`;
+3. if the PNG exceeds the pinned 3 MiB (`3,145,728` bytes) trigger, resize to maximum side 1536 using Pillow LANCZOS and floor-rounded dimensions;
+4. map the canonical selection index to the recovered historical filename.
+
+Selection 304 is resized, selection 331 is EXIF-normalized, and selections 477 and 494 remain unresized. `image_0228.png` maps uniquely to selection 229. Full per-item evidence is in `data/manifests/`.
 
 ## Artifact map
 
-| Paper item | Script | Artifact |
+| Claim or artifact | Entry point | Released input/output |
 |---|---|---|
-| Four headline values | `verify_reported_numbers.py` | `results/compact/*.jsonl`, `results/summaries/headline_results.json` |
-| WHOOPS mapping | `build_whoops_manifest.py` | `data/manifests/whoops_abnormal_manifest.csv`, mapping status JSON |
-| ImageNet reconstruction | `prepare_imagenet_normal.py` | ImageNet manifest and mapping status JSON |
-| Dose response | `analyze_dose_response.py` | compact main rows, `figures/dose_response_*.png` |
-| Interaction | `analyze_interaction.py` | compact main rows, `figures/interaction_plot_*.png` |
-| Threshold | `analyze_threshold.py` | compact main rows, `figures/threshold_sensitivity_*.png` |
-| Cross-model | `analyze_universal.py` | compact main rows, `figures/universal_controls_*.png` |
+| Four headline values | `scripts/verify_reported_numbers.py` | `results/compact/*.jsonl` |
+| Offline aggregation | `scripts/summarize_results.py` | compact JSONL rows |
+| WHOOPS mapping | `scripts/build_whoops_manifest.py` | WHOOPS manifest and status |
+| ImageNet reconstruction | `scripts/prepare_imagenet_normal.py` | ImageNet manifest and status |
+| Hosted inference | `scripts/run_inference.py` | private raw results |
+| Hosted judging | `scripts/run_judge.py` | private judged results |
 
-Legacy plotting scripts still expect the private per-file layout. Only the four camera-ready headline values are release-gated and exactly reproduced here.
+Rendered paper figures are intentionally not tracked. The analysis scripts remain available for users who regenerate the required result layout.

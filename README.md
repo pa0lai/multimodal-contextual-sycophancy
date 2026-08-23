@@ -3,46 +3,46 @@
 Yi-Cheng Lai and Hen-Hsen Huang  
 Findings of the Association for Computational Linguistics: EMNLP 2026
 
-Repository: https://github.com/pa0lai/multimodal-contextual-sycophancy
+This repository contains the evaluation code, portable metadata, and compact numeric results for a controlled diagnostic of **multimodal contextual sycophancy**. S2VA (System-2 Visual Arbitration) denotes the diagnostic context-blind witness–arbiter configuration; it is not a proposed architecture.
 
-This is the paper's code and compact-result release. It studies **multimodal contextual sycophancy** in a controlled high-conflict image–text evaluation; it is not an estimate of real-world RAG failure rates.
-
-The information boundary separates a **context-blind witness** from an **optional arbiter**. **S2VA (System-2 Visual Arbitration) is shorthand for the diagnostic witness–arbiter configuration, not a proposed architecture.** The implementation identifier `baseline_rag` is the paper's **Joint condition**; **Witness-Only** uses the witness result without the optional arbiter.
-
-Benchmark-specific outcome patterns are reported as:
-
-- contaminant pattern: GPT-5.1, Gemini 2.5, Qwen3-Thinking
-- scaffold pattern: Claude Sonnet 4.5, Qwen3-Instruct, Kimi-K2.5
+Paper link: coming soon.
 
 ## Headline results
 
 | Population | Configuration | GPT-5.1 correctness |
 |---|---|---:|
-| Full abnormal split, Gemini-generated false text (`n=499`) | Joint (`baseline_rag`) | 7.9% |
+| Full abnormal split, Gemini-generated false text (`n=499`) | Joint | 7.9% |
 | Same | Witness-Only | 84.2% |
-| GPT-4o-regenerated abnormal subset (`n=100`) | Joint (`baseline_rag`) | 68.0% |
-| Same | full witness–arbiter configuration (`s2va`) | 85.0% |
+| GPT-4o-regenerated abnormal subset (`n=100`) | Joint | 68.0% |
+| Same | Full witness–arbiter configuration | 85.0% |
 
-The GPT-4o-regenerated manifest has 200 cases: 100 abnormal and 100 normal. Its camera-ready headline uses the 100 abnormal cases.
+`baseline_rag` is the implementation name for the paper's Joint condition. `s2va` is the full witness–arbiter condition.
 
-## Image sources and current provenance status
+## Repository contents
 
-- Abnormal: WHOOPS!, 499 cases. Source identity is resolved for all 499: 466 current private files are exact decoded-pixel matches and 33 are reproducibly verified max-side-1536 LANCZOS transforms of exact official-source matches. No WHOOPS image archive is included or claimed.
-- Normal control source pool: 500 images from the ImageNet-1k train split. ImageNet images are never redistributed. Users must accept the dataset terms and reconstruct them locally.
+- `src/`: inference, arbitration, evaluation, and attack code.
+- `scripts/`: experiment, aggregation, provenance, and verification entry points.
+- `data/metadata/`: portable case metadata without image bytes.
+- `data/manifests/`: WHOOPS and ImageNet source mappings and hashes.
+- `results/compact/`: identifiers and derived numeric measurements only.
+- `annotations/`: sanitized human-audit tables.
+- `docs/ALL_PROMPTS.md`: inference prompt templates.
 
-All 500 ImageNet source identities and stream positions were recovered. The preparation pipeline reproduces all 500 archived evaluation inputs exactly after post-selection EXIF orientation normalization and the recovered PNG-size-triggered max-side-1536 LANCZOS normalization. EXIF normalization affected selection 331 and resizing affected selection 304; selections 477 and 494 are not resized. Downloaded raw sources are not claimed to be 500/500 pixel-identical before preprocessing. `image_0228.png` is explicitly mapped to selection 229; quantitative evidence is in `data/manifests/imagenet_forensic_report.json`.
+Rendered paper figures, raw images, full model responses, witness/arbiter text, and judge reasoning are intentionally not included.
 
-## Install and offline verification
+## Install and verify
+
+Python 3.11+ and [uv](https://docs.astral.sh/uv/) are recommended.
 
 ```bash
 uv sync
-uv run python -c "import src"
-uv run python scripts/verify_reported_numbers.py
-uv run python scripts/verify_release_manifest.py
 uv run pytest
+uv run python scripts/verify_reported_numbers.py
 ```
 
-Offline aggregation example:
+The verifier recomputes the four headline values from the released compact rows. No hosted model call is required.
+
+Example aggregation:
 
 ```bash
 uv run python scripts/summarize_results.py \
@@ -55,67 +55,45 @@ uv run python scripts/summarize_results.py \
   --attack-condition none
 ```
 
-## Reconstruct the ImageNet normal pool
+## Data and images
 
-First accept the `ILSVRC/imagenet-1k` terms on Hugging Face. The script uses an authorized environment token or the local Hugging Face credential cache without printing or persisting it. Then run:
+Raw images are not distributed.
+
+- Abnormal cases originate from [WHOOPS!](https://huggingface.co/datasets/nlphuji/whoops).
+- The normal control pool originates from the [ImageNet-1k training split](https://huggingface.co/datasets/ILSVRC/imagenet-1k).
+
+Users must accept the applicable dataset terms and obtain the images themselves. Exact source mappings and preprocessing evidence are provided in `data/manifests/`. See [DATA_CARD.md](DATA_CARD.md), [REPRODUCIBILITY.md](REPRODUCIBILITY.md), and [THIRD_PARTY_LICENSES.md](THIRD_PARTY_LICENSES.md).
+
+To reconstruct the authorized ImageNet pool:
 
 ```bash
 uv sync --extra collectors
 uv run --extra collectors --with 'datasets==4.4.2' python scripts/prepare_imagenet_normal.py \
-  --revision 49e2ee26f3810fb5a7536bbf732a7b07389a47b5 \
-  --verify-against /path/to/authorized/private/normal
+  --revision 49e2ee26f3810fb5a7536bbf732a7b07389a47b5
 ```
 
-By default the script writes no image bytes. It records the reproducible naming plan and provenance in `data/manifests/imagenet_normal_manifest.csv`; `--write-images` is an explicit private-only option. The strict release gate requires 500/500 exact positional and set matches.
+The script writes no image bytes unless `--write-images` is explicitly supplied.
 
-The post-selection order is EXIF normalization, RGB conversion with ICC preservation, explicit PNG encoding (`compress_level=6`, `optimize=false`), a `>3 MiB` encoded-size trigger, and—only when triggered—max-side-1536 LANCZOS resizing with positive-dimension floor rounding. The trigger reproduces the Git-history partition exactly; the absent one-off historical script prevents distinguishing a decimal 3 MB threshold from 3 MiB using blobs alone, so this release pins 3 MiB (`3,145,728` bytes).
+## Optional hosted-model reruns
 
-## Paid inference and judging
-
-Only these stages call hosted models and incur cost:
+Hosted inference and judging require an OpenRouter key and may incur cost:
 
 ```bash
 cp .env.example .env
 # Set OPENROUTER_API_KEY locally.
 
-uv run python scripts/run_inference.py \
-  --data_dir data/metadata/schema_v2_cases.jsonl \
-  --output_dir results/raw \
-  --models openai/gpt-5.1 \
-  --phases baseline_rag s2va witness_only \
-  --conditions false_text \
-  --image_type abnormal \
-  --attacks none
-
-uv run python scripts/run_judge.py \
-  --data_dir data/metadata/schema_v2_cases.jsonl \
-  --results_dir results/raw \
-  --models openai/gpt-5.1 \
-  --phases baseline_rag s2va witness_only \
-  --judge_model openai/gpt-4o
+uv run python scripts/run_inference.py --help
+uv run python scripts/run_judge.py --help
 ```
 
-These paid stages are optional and are not needed for the offline headline checks. `run_eval.py` is a deprecated alias for paid judging, not offline aggregation.
-
-## Deliberately excluded outputs
-
-Full model-generated answers, witness text, arbiter/judge reasoning, raw provider responses, and provider payloads are private. Released result files contain only identifiers and derived numeric measurements. Annotation tables are sanitized compact copies.
+These stages are not needed for offline verification. Full generated outputs remain private; see [MODEL_OUTPUTS.md](MODEL_OUTPUTS.md).
 
 ## Citation
 
-```bibtex
-@inproceedings{lai-huang-2026-multimodal-contextual-sycophancy,
-  title     = {Do Multimodal LLMs See Before They Read? Diagnosing Contextual Sycophancy},
-  author    = {Lai, Yi-Cheng and Huang, Hen-Hsen},
-  booktitle = {Findings of the Association for Computational Linguistics: EMNLP 2026},
-  year      = {2026}
-}
-```
+arXiv link and citation information coming soon.
 
-No DOI or ACL Anthology URL is claimed before an official record exists.
+## License
 
-## License scope
-
-- Code: MIT (`LICENSE`).
-- Author-owned derived metadata, annotations, and numeric measurements: CC BY 4.0 (`LICENSE-DATA`).
-- WHOOPS! and ImageNet images: original dataset licenses and terms; not covered by the licenses above and not included in this code repository.
+- Code: MIT ([LICENSE](LICENSE)).
+- Author-owned derived metadata, annotations, and numeric measurements: CC BY 4.0 ([LICENSE-DATA](LICENSE-DATA)).
+- WHOOPS! and ImageNet images remain under their original terms and are not included.
