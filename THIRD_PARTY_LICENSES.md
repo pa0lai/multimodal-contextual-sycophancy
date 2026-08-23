@@ -23,11 +23,10 @@ The official additional agreement is reproduced verbatim:
 >
 > By accessing or using this dataset, you acknowledge and agree to abide by these terms in conjunction with the CC BY 4.0 license.
 
-WHOOPS! image bytes are not included in the code repository. A separate local image archive was not created because only 466/499 evaluated images currently have exact decoded-pixel matches to pinned official artifacts.
+WHOOPS! image bytes are not included in the code repository. Source identity is resolved for all 499 evaluated images through exact official-source matches or documented deterministic transforms recorded in the manifest. No separate ZIP is distributed; any future WHOOPS! archive requires its own attribution package, license review, and published checksum.
 
 ## ImageNet-1k normal control
 
 The 500-image normal selection originates from the `ILSVRC/imagenet-1k` training split on Hugging Face. ImageNet images are not covered by this repository's MIT or CC BY 4.0 licenses. Users must accept and comply with the ImageNet and Hugging Face dataset terms and obtain the images themselves.
 
 ImageNet image bytes must not be placed in the Git repository, a GitHub Release, a project Google Drive archive, or any other public release artifact.
-

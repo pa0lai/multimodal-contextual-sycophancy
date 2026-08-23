@@ -8,6 +8,6 @@ authors:
   - family-names: Huang
     given-names: Hen-Hsen
 year: 2026
+repository-code: "https://github.com/pa0lai/multimodal-contextual-sycophancy"
 conference:
   name: "Findings of the Association for Computational Linguistics: EMNLP 2026"
-

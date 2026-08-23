@@ -3,6 +3,8 @@
 Yi-Cheng Lai and Hen-Hsen Huang  
 Findings of the Association for Computational Linguistics: EMNLP 2026
 
+Repository: https://github.com/pa0lai/multimodal-contextual-sycophancy
+
 This is the paper's code and compact-result release. It studies **multimodal contextual sycophancy** in a controlled high-conflict image–text evaluation; it is not an estimate of real-world RAG failure rates.
 
 The information boundary separates a **context-blind witness** from an **optional arbiter**. **S2VA (System-2 Visual Arbitration) is shorthand for the diagnostic witness–arbiter configuration, not a proposed architecture.** The implementation identifier `baseline_rag` is the paper's **Joint condition**; **Witness-Only** uses the witness result without the optional arbiter.
@@ -93,7 +95,7 @@ uv run python scripts/run_judge.py \
   --judge_model openai/gpt-4o
 ```
 
-Do not spend API credits until required images and provenance are resolved. `run_eval.py` is a deprecated alias for paid judging, not offline aggregation.
+These paid stages are optional and are not needed for the offline headline checks. `run_eval.py` is a deprecated alias for paid judging, not offline aggregation.
 
 ## Deliberately excluded outputs
 

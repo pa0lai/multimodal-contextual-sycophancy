@@ -32,6 +32,8 @@ ImageNet reconstruction at revision `49e2ee26f3810fb5a7536bbf732a7b07389a47b5` w
 
 The four distinct stages are: (1) select the first 500 eligible frozen-stream examples; (2) normalize EXIF, RGB/ICC, then encode an intermediate PNG with compression level 6 and `optimize=false`; (3) if that PNG is larger than the pinned 3 MiB (`3,145,728` bytes) trigger, resize to maximum side 1536 using Pillow LANCZOS and `int()` floor dimensions; and (4) map the canonical selection index to the independently recovered historical private filename. The evaluation input is the resulting post-normalization image, not the downloaded raw file. Selection 304 is resized; selection 331 is EXIF-normalized; 477 and 494 remain unresized. See `data/manifests/imagenet_forensic_report.json`.
 
+After EXIF-orientation normalization, images are encoded as PNG (compression level 6, without optimization). Files exceeding 3 MiB are resized with LANCZOS to a maximum side length of 1,536 pixels; this affects one of the 500 normal images.
+
 ## Artifact map
 
 | Paper item | Script | Artifact |
