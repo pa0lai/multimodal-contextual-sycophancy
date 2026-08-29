@@ -1,0 +1,19 @@
+{
+  "schema_version": 2,
+  "camera_ready": {
+    "full_abnormal_gemini_false_text": {
+      "n": 499,
+      "joint": 0.07915831663326653,
+      "witness_only": 0.4969939879759519,
+      "leaky_witness": 0.6372745490981964,
+      "s2va": 0.8416833667334669
+    },
+    "gpt4o_regenerated_abnormal_false_text": {
+      "n": 100,
+      "joint": 0.68,
+      "witness_only": 0.61,
+      "s2va": 0.85
+    }
+  },
+  "note": "Witness-Only values use the corrected camera-ready evaluation boundary."
+}

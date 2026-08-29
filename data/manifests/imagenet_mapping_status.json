@@ -1,0 +1,57 @@
+{
+  "schema_version": 3,
+  "status": "RECOVERED",
+  "release_verdict": "RELEASE_CANDIDATE_READY_FOR_AUTHOR_REVIEW",
+  "dataset_repository": "ILSVRC/imagenet-1k",
+  "dataset_revision": "49e2ee26f3810fb5a7536bbf732a7b07389a47b5",
+  "split": "train",
+  "streaming": true,
+  "shuffle_seed": 42,
+  "shuffle_buffer_size": 10000,
+  "minimum_resolution": 256,
+  "target_image_count": 500,
+  "source_identities": 500,
+  "unique_assignments": 500,
+  "post_preprocessing_decoded_pixel_matches": 500,
+  "post_preprocessing_exact_set_matches": 500,
+  "unmatched_selection_indices": [],
+  "image_0228_verified_index": 229,
+  "resize_applied_selection_indices": [
+    304
+  ],
+  "exif_normalization_selection_indices": [
+    331
+  ],
+  "datasets_version": "4.4.2",
+  "pillow_version": "12.3.0",
+  "python_version": "3.11.15",
+  "preprocessing_order": [
+    "frozen stream selection on source dimensions",
+    "EXIF orientation normalization",
+    "RGB conversion with ICC profile preservation",
+    "PNG encoding for historical size-trigger decision",
+    "conditional max-side-1536 LANCZOS resize",
+    "canonical selection-index naming"
+  ],
+  "png_size_trigger": {
+    "operator": ">",
+    "threshold_bytes": 3145728,
+    "threshold_label": "3 MiB",
+    "decision_point": "after EXIF normalization and RGB conversion, after intermediate PNG encoding, before resize",
+    "png_save_parameters": {
+      "format": "PNG",
+      "compress_level": 6,
+      "optimize": false,
+      "icc_profile": "preserved when present"
+    },
+    "git_history_evidence": {
+      "commit": "125c888857884dbb19942fdfe4e6c41430591e04",
+      "largest_unchanged_png_bytes": 2996612,
+      "smallest_changed_png_bytes": 3417733,
+      "classification_matches_all_1000_historical_pngs": true,
+      "limitation": "The untracked one-off script is absent; Git blobs distinguish the classes but cannot distinguish decimal 3,000,000 from binary 3,145,728. The canonical release pins 3 MiB exactly."
+    }
+  },
+  "wrote_image_bytes": false,
+  "hash_algorithm": "sha256(big_endian_uint32(width) || big_endian_uint32(height) || RGB_pixel_bytes_row_major)"
+}
