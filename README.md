@@ -7,7 +7,7 @@ This repository contains the evaluation code, prompts, portable metadata, and ca
 
 Paper: accepted to Findings of EMNLP 2026; public paper link forthcoming.
 
-## Headline results
+## Camera-ready headline results
 
 | Population | Configuration | GPT-5.1 correctness |
 |---|---|---:|
