@@ -56,7 +56,7 @@ class LLMClient:
         headers = {
             "Authorization": f"Bearer {self.api_key}",
             "Content-Type": "application/json",
-            "HTTP-Referer": "https://github.com/anonymous/multimodal-conflict",
+            "HTTP-Referer": "https://github.com/pa0lai/multimodal-contextual-sycophancy",
             "X-Title": "S2VA Experiment"
         }
         
