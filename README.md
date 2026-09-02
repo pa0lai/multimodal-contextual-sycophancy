@@ -5,7 +5,7 @@ Findings of the Association for Computational Linguistics: EMNLP 2026
 
 This repository contains the evaluation code, prompts, portable metadata, and camera-ready aggregate results for a controlled diagnostic of **multimodal contextual sycophancy**. S2VA (System-2 Visual Arbitration) is the diagnostic context-blind witness–arbiter configuration; it is not a proposed architecture.
 
-Paper: accepted to Findings of EMNLP 2026; public paper link forthcoming.
+Paper: [arXiv:2609.00067](https://arxiv.org/abs/2609.00067)
 
 ## Camera-ready headline results
 
@@ -95,7 +95,19 @@ These stages are not needed for offline verification. Full generated outputs rem
 
 ## Citation
 
-Citation metadata is provided in [CITATION.cff](CITATION.cff). Add the Anthology URL and DOI when the proceedings version becomes available.
+```bibtex
+@misc{lai2026multimodalllmsreaddiagnosing,
+  title         = {Do Multimodal LLMs See Before They Read? Diagnosing Contextual Sycophancy},
+  author        = {Yi-Cheng Lai and Hen-Hsen Huang},
+  year          = {2026},
+  eprint        = {2609.00067},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL},
+  url           = {https://arxiv.org/abs/2609.00067}
+}
+```
+
+Machine-readable citation metadata is provided in [CITATION.cff](CITATION.cff). We will update it with the ACL Anthology URL and DOI when the proceedings version becomes available.
 
 ## License
 
